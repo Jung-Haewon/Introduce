@@ -52,26 +52,43 @@
         </aside>
 
         <!-- 메인 콘텐츠 -->
-        <main class="flex-1 space-y-8">
-            <section class="bg-white p-8 rounded-xl border border-slate-200">
+        <main class="flex-1 space-y-8">  
+            <div class="bg-white p-8 rounded-xl border border-slate-200">
                 <h3 class="text-xl font-bold mb-6">주요 프로젝트 (*프로젝트 매니저)</h3>
                 
-                <div class="space-y-8">
-                    <!-- 프로젝트 항목 -->
-                    <div class="border-b border-slate-100 pb-6">
-                        <h4 class="text-lg font-semibold text-slate-900">* ONCO</h4>
-                        <p class="text-sm text-slate-500 mb-2">2024.11 - 2026.02 | React · FastAPI · Spring Boot · PostgreSQL | <a href="http://pnu.on-co.net" class="text-blue-500 hover:underline">pnu.on-co.net</a></p>
-                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                            <li>온라인 프로그래밍 교육을 위한 플랫폼 개발</li>
-                            <li>코딩 시험 중 부정행위 탐지 시스템 개발</li>
-                            <li>프론트엔드 CI/CD, 웹 IDE 디버깅, LLM 모듈 배포</li>
-                        </ul>
+                <!-- Grid 레이아웃: 데스크탑 2열, 모바일 1열 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- 프로젝트 카드 1 -->
+                    <div class="border border-slate-100 p-6 rounded-lg hover:border-blue-200 transition">
+                        <div class="font-bold text-blue-600 mb-1">*ONCO</div>
+                        <div class="text-xs text-slate-400 mb-2">2024.11 - 2026.02</div>
+                        <p class="text-sm text-slate-600">온라인 프로그래밍 교육 플랫폼 개발</p>
                     </div>
 
-                    <!-- 나머지 프로젝트들도 동일한 구조로 배치... -->
-                    
+                    <!-- 프로젝트 카드 2 -->
+                    <div class="border border-slate-100 p-6 rounded-lg hover:border-blue-200 transition">
+                        <div class="font-bold text-blue-600 mb-1">선박 운항시스템 사이버 복원력 강화</div>
+                        <div class="text-xs text-slate-400 mb-2">2025.05 - 2025.12</div>
+                        <p class="text-sm text-slate-600">리스크 관리 자동화 솔루션</p>
+                    </div>
+
+                    <!-- 프로젝트 카드 3 -->
+                    <div class="border border-slate-100 p-6 rounded-lg hover:border-blue-200 transition">
+                        <div class="font-bold text-blue-600 mb-1">VPD 제어 웹 프레임워크 고도화</div>
+                        <div class="text-xs text-slate-400 mb-2">2025.09 - 2025.11</div>
+                        <p class="text-sm text-slate-600">SCOPE 프레임워크 보안 점검</p>
+                    </div>
+
+                    <!-- 프로젝트 카드 4 -->
+                    <div class="border border-slate-100 p-6 rounded-lg hover:border-blue-200 transition">
+                        <div class="font-bold text-blue-600 mb-1">*Palito — 네트워크 다이어그램</div>
+                        <div class="text-xs text-slate-400 mb-2">2025.05 - 2025.10</div>
+                        <p class="text-sm text-slate-600">네트워크 자산 관리 React 라이브러리</p>
+                    </div>
+
                 </div>
-            </section>
+            </div>
         </main>
     </div>
 
