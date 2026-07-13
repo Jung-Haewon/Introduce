@@ -17,7 +17,7 @@
         </div>
     </nav>
 
-    <div class="max-w-5xl mx-auto flex gap-8 p-8">
+    <div class="max-w-6xl mx-auto flex gap-8 p-8">
         <!-- 사이드바 -->
         <aside class="w-72 flex-shrink-0">
             <!-- 사이드바 카드 카드 카드 -->
@@ -53,42 +53,113 @@
 
         <!-- 메인 콘텐츠 -->
         <main class="flex-1 space-y-8">  
-            <div class="bg-white p-8 rounded-xl border border-slate-200">
-                <h3 class="text-xl font-bold mb-6">주요 프로젝트 (*프로젝트 매니저)</h3>
-                
-                <!-- Grid 레이아웃: 데스크탑 2열, 모바일 1열 -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section class="bg-white p-8 rounded-xl border border-slate-200">
+                <h3 class="text-xl font-bold mb-5 text-slate-900 pl-4">주요 프로젝트 (*프로젝트 매니저)</h3>
+
+                <div class="space-y-5">
                     
-                    <!-- 프로젝트 카드 1 -->
-                    <div class="border border-slate-100 p-6 rounded-lg hover:border-blue-200 transition">
-                        <div class="font-bold text-blue-600 mb-1">*ONCO</div>
-                        <div class="text-xs text-slate-400 mb-2">2024.11 - 2026.02</div>
-                        <p class="text-sm text-slate-600">온라인 프로그래밍 교육 플랫폼 개발</p>
+                    <div class="group flex flex-col md:flex-row gap-4 md:gap-8 p-6 hover:bg-slate-50 transition-colors rounded-xl">
+                        <div class="w-full md:w-32 flex-shrink-0 text-sm text-slate-400 font-medium pt-1">2024.11 - 2026.02</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">* ONCO <a href="http://pnu.on-co.net" class="text-blue-600 text-sm font-normal hover:underline ml-2">pnu.on-co.net</a></h4>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">React</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">FastAPI</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">Spring Boot</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">PostgreSQL</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">GitHub Actions</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">Docker</span>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p>• <span class="font-semibold text-slate-700">소개:</span> 온라인 프로그래밍 교육을 위한 플랫폼 개발</p>
+                                <p>• <span class="font-semibold text-slate-700">주요 역할:</span> 온라인 코딩 시험 중 발생하는 부정행위(생성형 AI 사용, 웹 서칭 등) 탐지 시스템 개발</p>
+                                <p>• <span class="font-semibold text-slate-700">기타 역할:</span> 프론트엔드 CI/CD 파이프라인 구축, 웹 IDE 내 디버깅 기능 초기 구현, 챗 봇 기능을 위한 LLM 모듈 개발 및 배포</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- 프로젝트 카드 2 -->
-                    <div class="border border-slate-100 p-6 rounded-lg hover:border-blue-200 transition">
-                        <div class="font-bold text-blue-600 mb-1">선박 운항시스템 사이버 복원력 강화</div>
-                        <div class="text-xs text-slate-400 mb-2">2025.05 - 2025.12</div>
-                        <p class="text-sm text-slate-600">리스크 관리 자동화 솔루션</p>
+                    <div class="group flex flex-col md:flex-row gap-4 md:gap-8 p-6 hover:bg-slate-50 transition-colors rounded-xl">
+                        <div class="w-full md:w-32 flex-shrink-0 text-sm text-slate-400 font-medium pt-1">2025.05 - 2025.12</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">* 선박 운항시스템 사이버 복원력 강화를 위한 리스크 관리 자동화 솔루션</h4>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">IACS UR E26/E27</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">AWS EC2</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">Spring Boot</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">PostgreSQL</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">GitHub Actions</span>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p>• <span class="font-semibold text-slate-700">소개:</span> 선박 운항시스템의 사이버 복원력 강화를 위한 사이버리스크 관리 자동화 솔루션 구축</p>
+                                <p>• <span class="font-semibold text-slate-700">주요 역할:</span> 사업제안서 작성, IACS UR E26/E27 요구사항 분석, 클라우드 인프라 설계 및 CI/CD 파이프라인 구축, 선박 및 사용자 정보 관리 기능 개발, 사이버 자산 관리 기능 개발, 선박 사이버 자산 자동 도식화 및 자산 항목 동기화 모듈 개발, 사이버리스크 관리 및 평가 자동화 모듈 개발</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- 프로젝트 카드 3 -->
-                    <div class="border border-slate-100 p-6 rounded-lg hover:border-blue-200 transition">
-                        <div class="font-bold text-blue-600 mb-1">VPD 제어 웹 프레임워크 고도화</div>
-                        <div class="text-xs text-slate-400 mb-2">2025.09 - 2025.11</div>
-                        <p class="text-sm text-slate-600">SCOPE 프레임워크 보안 점검</p>
+                    <div class="group flex flex-col md:flex-row gap-4 md:gap-8 p-6 hover:bg-slate-50 transition-colors rounded-xl">
+                        <div class="w-full md:w-32 flex-shrink-0 text-sm text-slate-400 font-medium pt-1">2025.09 - 2025.11</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">VPD 제어 웹 프레임워크 고도화</h4>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">OWASP ZAP</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">NextJS</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">Zustand</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">ESLint</span>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p>• <span class="font-semibold text-slate-700">소개:</span> LG 스마트팩토리 내 운영 중인 SCOPE 프레임워크의 보안 점검 및 리팩토링 수행</p>
+                                <p>• <span class="font-semibold text-slate-700">주요 역할:</span> 보안 취약점 점검, 보안 취약점 목록 도출 및 코드 레벨에서의 개선, 프론트 소스코드 리팩토링(성능 개선), QA 및 오류 수정</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- 프로젝트 카드 4 -->
-                    <div class="border border-slate-100 p-6 rounded-lg hover:border-blue-200 transition">
-                        <div class="font-bold text-blue-600 mb-1">*Palito — 네트워크 다이어그램</div>
-                        <div class="text-xs text-slate-400 mb-2">2025.05 - 2025.10</div>
-                        <p class="text-sm text-slate-600">네트워크 자산 관리 React 라이브러리</p>
+                    <div class="group flex flex-col md:flex-row gap-4 md:gap-8 p-6 hover:bg-slate-50 transition-colors rounded-xl">
+                        <div class="w-full md:w-32 flex-shrink-0 text-sm text-slate-400 font-medium pt-1">2025.05 - 2025.10</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">* Palito — 네트워크 토폴로지 다이어그램 <a href="http://palito.pusan.ac.kr" class="text-blue-600 text-sm font-normal hover:underline ml-2">palito.pusan.ac.kr</a></h4>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">React</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">ReactFlow</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">JavaScript</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">AWS EC2</span>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p>• <span class="font-semibold text-slate-700">소개:</span> 효율적인 네트워크 자산 관리를 위한 React 용 프론트 라이브러리 개발</p>
+                                <p>• <span class="font-semibold text-slate-700">주요 역할:</span> 자산 이름, 유형, 네트워크 프로토콜과 같은 각 자산의 정보관리 / 자동으로 생성되는 네트워크 다이어그램 /
+차트 ↔ 다이어그램 간 실시간 변경 사항 반영 등 주요 기능 개발</p>
+                                <p>• <span class="font-semibold text-slate-700">기타 역할:</span> API Reference 웹 페이지 개발 및 배포</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-col md:flex-row gap-4 md:gap-8 p-6 hover:bg-slate-50 transition-colors rounded-xl">
+                        <div class="w-full md:w-32 flex-shrink-0 text-sm text-slate-400 font-medium pt-1">2024.08 - 2024.11</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">공공기관 사이버 자산 도입 정책 분석 연구</h4>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p>• <span class="font-semibold text-slate-700">소개:</span> 국내 및 국외(미국, 영국, 호주, 일본) 사이버 자산 도입 정책 분석</p>
+                                <p>• <span class="font-semibold text-slate-700">주요 역할:</span> 영국 사이버 자산 도입 정책 분석</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group flex flex-col md:flex-row gap-4 md:gap-8 p-6 hover:bg-slate-50 transition-colors rounded-xl">
+                        <div class="w-full md:w-32 flex-shrink-0 text-sm text-slate-400 font-medium pt-1">2024.08 - 2024.11</div>
+                        <div class="flex-1">
+                            <h4 class="text-lg font-bold text-slate-900 mb-2">Port Plan</h4>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">Flutter</span>
+                                <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-medium rounded-full border border-blue-100 uppercase">Dart</span>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1.5">
+                                <p>• <span class="font-semibold text-slate-700">소개:</span> 해상 선박 통합 관제 시스템 개발</p>
+                                <p>• <span class="font-semibold text-slate-700">주요 역할:</span> 모바일 클라이언트 개발</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-            </div>
+            </section>
         </main>
     </div>
 
